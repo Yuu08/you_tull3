@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/datetext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="3dp"
+        android:text="日付"
+        app:layout_constraintBottom_toTopOf="@+id/inputdatebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inputdatebtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:text="2019/1/1"
+        app:layout_constraintBottom_toTopOf="@+id/category"
+        app:layout_constraintStart_toStartOf="@+id/datetext"
+        app:layout_constraintTop_toBottomOf="@+id/datetext" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="17dp"
+        android:text="カテゴリ"
+        app:layout_constraintBottom_toTopOf="@+id/category_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/genre_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputdatebtn" />
+
+    <Spinner
+        android:id="@+id/genre_spinner"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/amounttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/amounttitle"
+        app:layout_constraintEnd_toEndOf="@+id/amounttext"
+        app:layout_constraintStart_toStartOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <TextView
+        android:id="@+id/amounttitle"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:text="金額"
+        app:layout_constraintBottom_toTopOf="@+id/amounttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_spinner" />
+
+    <EditText
+        android:id="@+id/amounttext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/contenttitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amounttitle" />
+
+    <TextView
+        android:id="@+id/contenttitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="内容(メモ)"
+        app:layout_constraintBottom_toTopOf="@+id/contenttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amounttext" />
+
+    <EditText
+        android:id="@+id/contenttext"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenttitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
