@@ -19,7 +19,7 @@ class SetCustomization : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_set_customization)
 
-        val GoogleId = "123@gmail.com"
+        val GoogleId = "123hhhhhhh@gmail.com"
         //カテゴリのspinner
         readSetCategory(GoogleId) {
 
@@ -117,7 +117,7 @@ class SetCustomization : AppCompatActivity() {
 
         //Spinnerへ画面遷移をする関数
         fun IntentToTop(view: View?){
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, TopActivity::class.java)
             startActivity(intent)
         }
         ToTop.setOnClickListener{IntentToTop(it)}

@@ -133,7 +133,7 @@ class SlideshowFragment : Fragment() {
             }
 
 
-            //追加ボタンの処理-------------------------------------------------------------
+            //追加ボタンの処理-----------------------------------------------------------------------------------------------
             // idがdialogButtonのButtonを取得
             val dialogBtn: Button = root.findViewById(R.id.dialogButton) as Button
             // clickイベント追加
@@ -295,8 +295,8 @@ class SlideshowFragment : Fragment() {
         //DialogFragmentの画面サイズ
         override fun onStart() {
             super.onStart()
-            val width = (resources.displayMetrics.widthPixels * 0.9).toInt()
-            val height = (resources.displayMetrics.heightPixels * 0.8).toInt()
+            val width = (resources.displayMetrics.widthPixels * 0.95).toInt()
+            val height = (resources.displayMetrics.heightPixels * 0.97).toInt()
             dialog?.window?.setLayout(width, height)
         }
 

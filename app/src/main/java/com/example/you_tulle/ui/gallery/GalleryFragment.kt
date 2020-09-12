@@ -53,7 +53,7 @@ class GalleryFragment : Fragment() {
 
                     //表示するFrameLayoutの高さを要素この数で動的に変更する
                     val param = layout.getLayoutParams()
-                    param.height = 150+70*(it.size)
+                    param.height = 150+100*(it.size)
                     //表示する項目数をここで宣言
                     val items = arrayOf("date","genre", "category", "amount", "content")
                     //[件数][一件分の内容数]という2次元配列を用意する
@@ -103,11 +103,11 @@ class GalleryFragment : Fragment() {
                             //一覧の表示場所を設定
                             //1列目
                             Incomedata[i][j]?.x = 50.0f* (j*3+ 1)
-                            Incomedata[i][j]?.y = 80.0f * i
+                            Incomedata[i][j]?.y = 100.0f * i
                             //2列目
                             if(j>=3){
                                 Incomedata[i][j]?.x = 50.0f* ((j-2)*3+ 1)
-                                Incomedata[i][j]?.y = 80.0f * i +40.0f
+                                Incomedata[i][j]?.y = 100.0f * i +40.0f
                             }
                             layout.addView(
                                 Incomedata[i][j],
