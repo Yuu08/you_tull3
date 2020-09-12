@@ -32,8 +32,8 @@
 
     <TextView
         android:id="@+id/category"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="141dp"
+        android:layout_height="32dp"
         android:layout_marginStart="9dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="17dp"
@@ -53,7 +53,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/amounttext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/category"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
 
     <Spinner
         android:id="@+id/category_spinner"
@@ -115,6 +116,30 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contenttitle" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="121dp"
+        android:text="ジャンル"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inputdatebtn"
+        app:layout_constraintTop_toBottomOf="@+id/datetext" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="82dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
+        android:text="カメラ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
